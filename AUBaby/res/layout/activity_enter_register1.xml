@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AllBackgroundstyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/TopBackgroundTitleBarstyle" >
+
+        <Button
+            style="@style/backBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="backButton" />
+
+        <TextView
+            android:id="@+id/tv_titlebar4"
+            style="@style/TopTitleTextViewStyle"
+            android:background="@null"
+            android:text="@string/register" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeLayout1"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/upImageView"
+                style="@style/ImageViewEnterUpStyle"
+                android:contentDescription="@null" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/phoneEditText"
+                    style="@style/EditTextEnterStyle"
+                    android:layout_marginTop="@dimen/view_bigbig_margin"
+                    android:hint="@string/register_phone"
+                    android:inputType="number"
+                    android:textCursorDrawable="@null" />
+
+                <Button
+                    android:id="@+id/getCodeButton"
+                    style="@style/ButtonEnterRedStyle"
+                    android:layout_marginTop="@dimen/view_big_margin"
+                    android:text="@string/register_get_code" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_big_margin"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/agreementCheckBox"
+                        style="@style/CheckBoxEnterStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/register_agreement" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/read_agreement"
+                        android:textColor="@color/txt3_selector"
+                        android:textSize="@dimen/checkbox_enter_text_size" 
+                        android:clickable="true"
+                        android:id="@+id/readAgreementTxt"/>
+                </LinearLayout>
+
+                <TextView
+                    style="@style/HorizontalPaddingstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space3"
+                    android:text="@string/no_register_notice"
+                    android:textColor="@color/red1" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/downImageView"
+                style="@style/ImageViewEnterDownStyle"
+                android:contentDescription="@null" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

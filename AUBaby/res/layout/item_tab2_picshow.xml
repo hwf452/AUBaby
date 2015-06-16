@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" 
+   >
+
+    <FrameLayout
+        android:layout_width="@dimen/user_head_width_height"
+        android:layout_height="@dimen/user_head_width_height"
+        android:layout_marginRight="@dimen/space1" 
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/headImg"
+            android:layout_width="@dimen/user_head_width_height"
+            android:layout_height="@dimen/user_head_width_height"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/head" />
+
+        <ImageView
+            android:id="@+id/tecImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_tec"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/nameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp"
+        android:singleLine="true"
+        android:textColor="#393939" />
+
+</LinearLayout>

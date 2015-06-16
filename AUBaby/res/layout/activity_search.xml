@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AllBackgroundstyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BackActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/TopBackgroundTitleBarstyle" >
+
+        <Button
+            style="@style/backBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="backButton" />
+
+        <TextView
+            android:id="@+id/tv_titlebar4"
+            style="@style/TopTitleTextViewStyle"
+            android:text="@string/search" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_padding"
+                android:layout_marginRight="@dimen/activity_horizontal_padding"
+                android:layout_marginTop="@dimen/space3"
+                android:background="@drawable/list9_2" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/activity_horizontal_padding"
+                    android:layout_marginRight="@dimen/activity_horizontal_padding"
+                    android:layout_marginTop="@dimen/space2"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space2"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/start_date"
+                            android:textColor="@color/search_textcolor"
+                            android:textSize="@dimen/user_shuoshuo_textsize1" />
+
+                        <EditText
+                            android:id="@+id/startDateEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space1"
+                            android:layout_marginRight="@dimen/space1"
+                            android:layout_weight="1000"
+                            android:background="@drawable/list6"
+                            android:inputType="datetime"
+                            android:singleLine="true"
+                            android:textSize="@dimen/search_textsize" />
+
+                        <Button
+                            android:id="@+id/startDateBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn25_selector" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space2"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/end_date"
+                            android:textColor="@color/search_textcolor"
+                            android:textSize="@dimen/user_shuoshuo_textsize1" />
+
+                        <EditText
+                            android:id="@+id/endDateEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space1"
+                            android:layout_marginRight="@dimen/space1"
+                            android:layout_weight="1000"
+                            android:background="@drawable/list6"
+                            android:inputType="datetime"
+                            android:singleLine="true"
+                            android:textSize="@dimen/search_textsize" />
+
+                        <Button
+                            android:id="@+id/endDateBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn25_selector" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/space2"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/content"
+                            android:textColor="@color/search_textcolor"
+                            android:textSize="@dimen/user_shuoshuo_textsize1" />
+
+                        <EditText
+                            android:id="@+id/searchKeyEdtTXT"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space1"
+                            android:layout_marginRight="@dimen/space1"
+                            android:background="@drawable/list6"
+                            android:hint="@string/input_key"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:textSize="@dimen/search_textsize" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/searchBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/space2"
+                        android:layout_marginTop="@dimen/space2"
+                        android:background="@drawable/btn23_selector"
+                        android:text="@string/search"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/search_btn_textsize" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/portrait16"
+                android:orientation="vertical" 
+                android:visibility="gone">
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

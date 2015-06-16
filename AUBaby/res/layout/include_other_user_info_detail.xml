@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/otherUserInfoDetailLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <include layout="@layout/include_user_info" />
+
+    <include layout="@layout/include_radiogroup_for_fragment_switch" />
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+     <string name="tv_tab2_myphonebook">我的相册</string>
+     <string name="tab2_tv_totalpicbook">相册总数 :</string>
+     <string name="tab2_totalbook_tv">像片总数 :</string>
+     <string name="call_mainTeacher">呼叫班主任</string>
+     <string name="tab2_tv_call">呼叫</string>
+     <string name="tab2_setting_send">发布</string>
+     <string name="tab2_tv_list1">个人资料</string>
+     <string name="tab2_tv_list2">我的资料</string>
+     <string name="tab2_tv_list3">共享设置</string>
+     <string name="tab2_tv_list4">用户反馈</string>
+     <string name="tab2_tv_list5">在线帮助</string>
+     <string name="tab2_tv_list6">关于</string>
+     <string name="tab2_tv_list7">切换班级</string>
+     <string name="tab2_tv_list8">退出登录</string>
+     <string name="systemSetting_tab2">系统设置</string>
+     <string name="tv_tab2_save">保存</string>
+     <string name="tv_tab2_feedback1">反馈</string>
+     <string name="tab2_babyname">宝贝名字</string>
+     <string name="tab2_relate_tv">家长关系</string>
+     <string name="tab2_tv_phoneNub">手机号</string>
+     <string name="tv_tab2_class_about">班级情况</string>
+     <string name="tv_tab2_userimfo1">帐号到期日</string>
+     <string name="tv_tab2_userimfo2">账户余额</string>
+     <string name="tv_tab2_userimfo3">当前积分</string>
+     <string name="tv_tab2_user_info_titlebar">帐户信息</string>
+     <string name="tv_tab2_share_setting">分享设置</string>
+     <string name="tv_tab2_feedback">请填入要提交的内容</string>
+     <string name="tv_tab2_share_setting_bind">腾讯微博绑定</string>
+     <string name="menu_item_clear_memory_cache">清除内存级存</string>
+    <string name="menu_item_clear_disc_cache">清除SD卡级存</string>
+    <string name="menu_item_pause_on_scroll">Pause on scroll</string>
+    <string name="menu_item_pause_on_fling">Pause on fling</string>
+</resources>

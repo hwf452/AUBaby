@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AllBackgroundstyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_back_head" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.halong.aubaby.widget.PullToRefreshView
+            android:id="@+id/pullToRefreshView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/diaryListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null"
+                android:drawingCacheQuality="low"
+                android:listSelector="@android:color/transparent"
+                android:scrollingCache="true" >
+            </ListView>
+        </com.halong.aubaby.widget.PullToRefreshView>
+
+        <include layout="@layout/include_progress" />
+    </FrameLayout>
+
+</LinearLayout>

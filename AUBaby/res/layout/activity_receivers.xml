@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AllBackgroundstyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/TopBackgroundTitleBarstyle" >
+
+        <Button
+            style="@style/backBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="backButton" />
+
+        <TextView
+            android:id="@+id/tv_titlebar4"
+            style="@style/TopTitleTextViewStyle"
+            android:text="@string/choice_receiver" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/btn_tab2_rightStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnok_selector"
+            android:text="@string/submit"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <GridView
+            android:id="@+id/gridView"
+            style="@style/HorizontalPaddingstyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawingCacheQuality="low"
+            android:listSelector="@null"
+            android:numColumns="2"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollingCache="true"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="1dp" >
+        </GridView>
+
+        <include layout="@layout/include_progress" />
+    </FrameLayout>
+
+</LinearLayout>

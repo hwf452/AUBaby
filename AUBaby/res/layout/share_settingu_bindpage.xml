@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AllBackgroundstyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/TopBackgroundTitleBarstyle" >
+
+        <Button
+            style="@style/backBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="backButton" />
+
+        <TextView
+            android:id="@+id/tv_titlebar4"
+            style="@style/TopTitleTextViewStyle"
+            android:background="@null"
+            android:text="@string/tv_tab2_share_setting_bind" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/btn_tab2_rightStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn28_selector"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/save"
+            style="@style/btn_tab2_rightStyle"
+            android:layout_width="54.5dp"
+            android:layout_height="28.5dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn66_selector"
+            android:gravity="right|center_vertical"
+            android:paddingRight="5dp"
+            android:text="@string/tv_tab2_save"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear11"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/list23"
+        android:orientation="vertical" 
+        android:layout_marginLeft="@dimen/activity_horizontal_padding"
+        android:layout_marginRight="@dimen/activity_horizontal_padding">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/portrait16" >
+    </RelativeLayout>
+
+</RelativeLayout>

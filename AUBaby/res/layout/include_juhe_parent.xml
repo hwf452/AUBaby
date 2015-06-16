@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/parentLayout"
+        style="@style/tv_tab_listPaddingleftAndRight"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="@dimen/activity_horizontal_padding" >
+
+        <TextView
+            android:id="@+id/typeTxt"
+            style="@style/HorizontalPaddingstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_021"
+            android:drawablePadding="@dimen/activity_horizontal_padding"
+            android:textColor="@color/user_shuoshuo_textcolor1"
+            android:textSize="@dimen/user_shuoshuo_textsize1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/numSTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:background="@drawable/icon_023"
+            android:gravity="center"
+            android:text="@string/number"
+            android:textColor="@color/white1"
+            android:textSize="@dimen/textview_tab5_message_num_size"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1000" />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            style="@style/HorizontalPaddingstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/today_none"
+            android:textColor="@color/user_shuoshuo_textcolor1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_016" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone" />
+
+</LinearLayout>

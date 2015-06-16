@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HorizontalPaddingstyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space2" >
+
+            <FrameLayout
+                android:id="@+id/headLayout"
+                android:layout_width="@dimen/user_head_width_height"
+                android:layout_height="@dimen/user_head_width_height"
+                android:layout_marginRight="@dimen/space1" >
+
+                <ImageButton
+                    android:id="@+id/headImg"
+                    android:layout_width="@dimen/user_head_width_height"
+                    android:layout_height="@dimen/user_head_width_height"
+                    android:background="@null"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/head" />
+
+                <ImageView
+                    android:id="@+id/tecImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_tec"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/headLayout"
+                android:layout_toRightOf="@id/headLayout"
+                android:baselineAligned="true"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/userNameTXT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1000"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/user_name_textcolor1"
+                    android:textSize="@dimen/user_name_textsize1"
+                    android:textStyle="bold" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/postedTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/user_posted_textcolor1"
+                        android:textSize="@dimen/user_shuoshuo_textsize1" />
+
+                    <ProgressBar
+                        android:id="@+id/progress"
+                        style="?android:attr/progressBarStyleSmallInverse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top" />
+
+                    <Button
+                        android:id="@+id/retryBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:text="@string/retry"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/diaryNeiRongTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearLayout"
+                android:layout_toRightOf="@id/headLayout"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="@color/user_shuoshuo_textcolor1"
+                android:textSize="@dimen/user_shuoshuo_textsize1" />
+        </RelativeLayout>
+
+        <com.halong.aubaby.widget.NoScrollGridView
+            android:id="@+id/photosGridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/grid_item_space"
+            android:layout_marginTop="@dimen/grid_item_space"
+            android:descendantFocusability="blocksDescendants"
+            android:horizontalSpacing="@dimen/grid_item_space"
+            android:listSelector="@null"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/grid_item_space" >
+        </com.halong.aubaby.widget.NoScrollGridView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/zanBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space1"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/icon_018"
+                android:textColor="@color/user_shuoshuo_textcolor2"
+                android:textSize="@dimen/user_shuoshuo_textsize1" />
+
+            <Button
+                android:id="@+id/pinglunBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/icon_019"
+                android:textColor="@color/user_shuoshuo_textcolor2"
+                android:textSize="@dimen/user_shuoshuo_textsize1" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1000" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/deleteBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn10_selector"
+                    android:text="@string/delete"
+                    android:textColor="@color/user_shuoshuo_textcolor2"
+                    android:textSize="@dimen/user_shuoshuo_textsize1" />
+
+                <Button
+                    android:id="@+id/collectBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn10_selector"
+                    android:text="@string/collect"
+                    android:textColor="@color/user_shuoshuo_textcolor2"
+                    android:textSize="@dimen/user_shuoshuo_textsize1" />
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/shareBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space1"
+                android:layout_marginRight="@dimen/space1"
+                android:background="@drawable/btn11_selector"
+                android:text="@string/share"
+                android:textColor="@color/user_shuoshuo_textcolor2"
+                android:textSize="@dimen/user_shuoshuo_textsize1" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/commentRelLayout"
+            style="@style/HorizontalPaddingstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_padding"
+            android:background="@color/commet_bg"
+            android:visibility="gone" >
+
+        <FrameLayout
+                android:id="@+id/commentHeadLayout"
+                android:layout_width="@dimen/user_little_head_width_height"
+                android:layout_height="@dimen/user_little_head_width_height"
+                android:layout_marginRight="@dimen/space1" >
+
+                <ImageButton
+                    android:id="@+id/commentImg"
+                    android:layout_width="@dimen/user_little_head_width_height"
+                    android:layout_height="@dimen/user_little_head_width_height"
+                    android:layout_marginRight="@dimen/space1"
+                    android:background="@null"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/head" />
+
+                <ImageView
+                    android:id="@+id/commentTecImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_tec_l"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/commentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/commentHeadLayout"
+                android:layout_toRightOf="@id/commentHeadLayout"
+                android:baselineAligned="true"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/commentNameTXT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1000"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/user_name_textcolor1"
+                    android:textSize="@dimen/user_shuoshuo_textsize1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/commentPostedTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/user_posted_textcolor1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/commentNeiRongTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/commentLayout"
+                android:layout_toRightOf="@id/commentHeadLayout"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="@color/user_shuoshuo_textcolor1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/commentRelLayout2"
+            style="@style/HorizontalPaddingstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_padding"
+            android:background="@color/commet_bg"
+            android:visibility="gone" >
+
+            <FrameLayout
+                android:id="@+id/commentHeadLayout2"
+                android:layout_width="@dimen/user_little_head_width_height"
+                android:layout_height="@dimen/user_little_head_width_height"
+                android:layout_marginRight="@dimen/space1" >
+
+                <ImageButton
+                    android:id="@+id/commentImg2"
+                    android:layout_width="@dimen/user_little_head_width_height"
+                    android:layout_height="@dimen/user_little_head_width_height"
+                    android:layout_marginRight="@dimen/space1"
+                    android:background="@null"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/head" />
+
+                <ImageView
+                    android:id="@+id/commentTecImg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_tec_l"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/commentLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/commentHeadLayout2"
+                android:layout_toRightOf="@id/commentHeadLayout2"
+                android:baselineAligned="true"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/commentNameTXT2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1000"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/user_name_textcolor1"
+                    android:textSize="@dimen/user_shuoshuo_textsize1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/commentPostedTxt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/user_posted_textcolor1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/commentNeiRongTxt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/commentLayout2"
+                android:layout_toRightOf="@id/commentHeadLayout2"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="@color/user_shuoshuo_textcolor1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/commentRelLayout3"
+            style="@style/HorizontalPaddingstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_padding"
+            android:background="@color/commet_bg"
+            android:visibility="gone" >
+
+            <FrameLayout
+                android:id="@+id/commentHeadLayout3"
+                android:layout_width="@dimen/user_little_head_width_height"
+                android:layout_height="@dimen/user_little_head_width_height"
+                android:layout_marginRight="@dimen/space1" >
+
+                <ImageButton
+                    android:id="@+id/commentImg3"
+                    android:layout_width="@dimen/user_little_head_width_height"
+                    android:layout_height="@dimen/user_little_head_width_height"
+                    android:layout_marginRight="@dimen/space1"
+                    android:background="@null"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/head" />
+
+                <ImageView
+                    android:id="@+id/commentTecImg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_tec_l"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/commentLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/commentHeadLayout3"
+                android:layout_toRightOf="@id/commentHeadLayout3"
+                android:baselineAligned="true"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/commentNameTXT3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1000"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/user_name_textcolor1"
+                    android:textSize="@dimen/user_shuoshuo_textsize1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/commentPostedTxt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/user_posted_textcolor1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/commentNeiRongTxt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/commentLayout3"
+                android:layout_toRightOf="@id/commentHeadLayout3"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="@color/user_shuoshuo_textcolor1" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_padding"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/translucent3" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/praiseDiaryImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/praise"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/collectDiaryImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/collect"
+        android:visibility="gone" />
+
+</RelativeLayout>

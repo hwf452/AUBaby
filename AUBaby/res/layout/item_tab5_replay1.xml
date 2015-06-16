@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/view_small_margin" >
+
+    <TextView
+        android:id="@+id/contentTextView"
+        style="@style/HorizontalPaddingstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:lineSpacingExtra="2dp"
+        android:textColor="@color/user_shuoshuo_textcolor1"
+        android:textSize="@dimen/textview_tab5_notice_title_size" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        style="@style/HorizontalPaddingstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_padding"
+        android:baselineAligned="true"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/numTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1000"
+            android:drawableLeft="@drawable/icon_018"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/gray2"
+            android:textSize="@dimen/textview_tab5_notice_replay_size" />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/gray2"
+            android:textSize="@dimen/textview_tab5_notice_replay_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/HorizontalPaddingstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_replay"
+            android:textColor="@color/gray2"
+            android:textSize="@dimen/textview_tab5_notice_replaynum_size" />
+
+        <TextView
+            android:id="@+id/newReplayTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray2"
+            android:textSize="@dimen/textview_tab5_notice_replaynum_size" 
+            android:text="@string/number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_replay2"
+            android:textColor="@color/gray2"
+            android:textSize="@dimen/textview_tab5_notice_replaynum_size" />
+    </LinearLayout>
+
+</LinearLayout>

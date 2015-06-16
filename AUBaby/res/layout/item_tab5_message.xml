@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list22"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/headLayout"
+            android:layout_width="@dimen/user_little_head_width_height"
+            android:layout_height="@dimen/user_little_head_width_height"
+            android:layout_marginRight="@dimen/space1"
+            android:layout_marginTop="@dimen/space1" >
+
+            <ImageView
+                android:id="@+id/headImg"
+                android:layout_width="@dimen/user_little_head_width_height"
+                android:layout_height="@dimen/user_little_head_width_height"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/head" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_tec_l" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/commentLyout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="center"
+                android:src="@drawable/btn_sign_selector"
+                android:textColor="@color/red2" />
+
+            <TextView
+                android:id="@+id/signInTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img"
+                android:text="@string/number"
+                android:textColor="@color/red2" />
+
+            <TextView
+                android:id="@+id/commentTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/signInTextView"
+                android:layout_toRightOf="@id/img"
+                android:text="@string/number"
+                android:textColor="@color/red2" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/statusImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/commentLyout"
+            android:layout_alignTop="@id/commentLyout"
+            android:layout_marginRight="@dimen/space4"
+            android:layout_toLeftOf="@id/commentLyout"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_025" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/user_little_head_width_height"
+            android:layout_toLeftOf="@id/statusImageView"
+            android:layout_toRightOf="@id/headLayout"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/nameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/black3"
+                android:textSize="@dimen/user_shuoshuo_textsize1" />
+
+            <TextView
+                android:id="@+id/dateImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameTxt"
+                android:background="@null"
+                android:singleLine="true"
+                android:textColor="@color/bule2" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="@color/black3" />
+
+    <ImageView
+        android:id="@+id/fileImg"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_1"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/fileOriginNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/btn_file_selector"
+        android:drawablePadding="@dimen/space1"
+        android:gravity="center_vertical"
+        android:textColor="@color/txt2_selector"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/progressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="@color/dimgray"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/fileSizeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dimgray"
+        android:visibility="gone" />
+
+</LinearLayout>

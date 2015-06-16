@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AllBackgroundstyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <FrameLayout
+        android:id="@+id/replyHeadLayout"
+        android:layout_width="@dimen/user_little_head_width_height"
+        android:layout_height="@dimen/user_little_head_width_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/view_smallsmall_margin" >
+
+        <ImageButton
+            android:id="@+id/replyHeadImageButton"
+            android:layout_width="@dimen/user_little_head_width_height"
+            android:layout_height="@dimen/user_little_head_width_height"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/head" />
+
+        <ImageView
+            android:id="@+id/tecImgX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_tec_l"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/replyHeadLayout"
+        android:layout_marginBottom="@dimen/view_smallsmallsmall_margin"
+        android:layout_toLeftOf="@id/replyHeadLayout"
+        android:baselineAligned="true"
+        android:gravity="bottom|right"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/replyNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="@color/red3"
+            android:textSize="@dimen/textview_tab5_notice_replay_size" />
+
+        <TextView
+            android:id="@+id/replyDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="@color/red3"
+            android:textSize="@dimen/textview_tab5_notice_replay_size" />
+
+        <TextView
+            android:id="@+id/replyContentTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/view_smallsmall_margin"
+            android:textColor="@color/user_shuoshuo_textcolor1"
+            android:textSize="@dimen/user_shuoshuo_textsize1" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/replyFileImg"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/linearLayout"
+        android:layout_toLeftOf="@id/replyHeadLayout"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_1"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/replyFileSizeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/replyFileImg"
+        android:layout_toLeftOf="@id/replyHeadLayout"
+        android:visibility="gone" />
+
+</RelativeLayout>

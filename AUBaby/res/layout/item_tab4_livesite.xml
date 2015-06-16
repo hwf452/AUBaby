@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/livesiteRelativeLayout"
+    style="@style/AllBackgroundstyle"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="290dp"
+    android:background="@drawable/portrait26" >
+
+    <TextView 
+        android:layout_width="match_parent"
+        android:drawableLeft="@drawable/btn40_selector"
+        android:text="开放时间：周一到周五8:00-19:00"
+        android:textColor="@color/white"
+        android:paddingLeft="@dimen/view_small_padding"
+        android:gravity="center_vertical|right"
+        android:textSize="@dimen/textview_tab4_livesite_date_size"
+        android:layout_height="40dp"/>
+    
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="@null"
+        android:layout_centerInParent="true"
+        android:src="@drawable/btn56_selector"/>
+    
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/view_big_padding"
+        android:textSize="@dimen/textview_tab4_livesite_title_size"
+        android:background="@drawable/translucent7"
+        android:text="校园娱乐场" />
+
+</RelativeLayout>

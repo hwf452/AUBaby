@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:drawableLeft="@drawable/icon_015"
+        android:drawablePadding="@dimen/view_smallsmall_margin"
+        android:drawableRight="@drawable/icon_016"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/view_small_padding"
+        android:text="@string/today_recommend"
+        android:textColor="@color/red5"
+        android:textSize="@dimen/textview_tab4_video_type_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list23"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/tab4VideoHeaderImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="195dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/portrait27" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:contentDescription="@null"
+                android:src="@drawable/btn56_selector" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/view_smallsmallsmall_margin"
+                android:gravity="center_vertical"
+                android:text="圣诞节精彩比赛"
+                android:textColor="@color/black6"
+                android:textSize="@dimen/textview_tab4_video_text_size" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_smallsmallsmall_margin"
+                android:drawableLeft="@drawable/icon_017"
+                android:gravity="center_vertical"
+                android:text="0"
+                android:textColor="@color/gray3"
+                android:textSize="@dimen/textview_tab4_video_num_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_smallsmallsmall_margin"
+                android:drawableLeft="@drawable/icon_018"
+                android:gravity="center_vertical"
+                android:text="0"
+                android:textColor="@color/gray3"
+                android:textSize="@dimen/textview_tab4_video_num_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_smallsmallsmall_margin"
+                android:drawableLeft="@drawable/icon_019"
+                android:gravity="center_vertical"
+                android:text="0"
+                android:textColor="@color/gray3"
+                android:textSize="@dimen/textview_tab4_video_num_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

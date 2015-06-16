@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="edittext_gray">#b7b7b7</color>
+	<color name="black3">#454545</color>
+	<color name="black4">#5a5a5a</color>
+	<color name="black5">#1a1a1a</color>
+	<color name="black6">#353535</color>
+	<color name="red2">#e92557</color>
+	<color name="red3">#f54975</color>
+	<color name="red4">#fe4942</color>
+	<color name="red5">#eb0035</color>
+	<color name="gray2">#616161</color>
+	<color name="gray3">#7e7e7e</color>
+	<color name="bule2">#3798e4</color>
+</resources>

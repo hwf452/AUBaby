@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color" >
+
+    <LinearLayout
+        style="@style/HorizontalPaddingstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space4"
+            android:layout_marginTop="@dimen/space2" >
+
+            <FrameLayout
+                android:id="@+id/headLayout"
+                android:layout_width="@dimen/user_head_width_height"
+                android:layout_height="@dimen/user_head_width_height"
+                android:layout_marginRight="@dimen/space1" >
+
+                <ImageButton
+                    android:id="@+id/headImg"
+                    android:layout_width="@dimen/user_head_width_height"
+                    android:layout_height="@dimen/user_head_width_height"
+                    android:background="@null"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/head" />
+
+                <ImageView
+                    android:id="@+id/tecImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_tec"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/headLayout"
+                android:layout_toRightOf="@id/headLayout"
+                android:baselineAligned="true"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/userNameTXT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1000"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/user_name_textcolor1"
+                    android:textSize="@dimen/user_name_textsize1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/postedTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/user_posted_textcolor1"
+                    android:textSize="@dimen/user_shuoshuo_textsize1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/shuoShuoTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearLayout"
+                android:layout_toRightOf="@id/headLayout"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:textColor="@color/user_shuoshuo_textcolor1"
+                android:textSize="@dimen/user_shuoshuo_textsize1" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.halong.aubaby.widget.ChildViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1000"
+                    android:background="@color/black" >
+                </com.halong.aubaby.widget.ChildViewPager>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/imgPreviewLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/praiseBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="@dimen/space2"
+                    android:background="@drawable/btn14_selector" />
+
+                <Button
+                    android:id="@+id/collectBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/space2"
+                    android:background="@drawable/btn15_selector" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/zanTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space1"
+            android:layout_marginTop="@dimen/space1"
+            android:text="@string/no_like"
+            android:textColor="@color/user_shuo_detail_textcolor3" />
+
+        <com.halong.aubaby.widget.NoScrollGridView
+            android:id="@+id/praiseGridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnWidth="@dimen/user_head_width_height"
+            android:drawingCacheQuality="low"
+            android:fadingEdge="none"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/grid_item_space"
+            android:listSelector="@null"
+            android:numColumns="auto_fit"
+            android:scrollbars="none"
+            android:stretchMode="spacingWidth"
+            android:verticalSpacing="@dimen/grid_item_space" >
+        </com.halong.aubaby.widget.NoScrollGridView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/zanBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space1"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/icon_018"
+                android:text="@string/number"
+                android:textColor="@color/user_shuoshuo_textcolor2"
+                android:textSize="@dimen/user_shuoshuo_textsize1" />
+
+            <Button
+                android:id="@+id/pinglunBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/icon_019"
+                android:text="@string/number"
+                android:textColor="@color/user_shuoshuo_textcolor2"
+                android:textSize="@dimen/user_shuoshuo_textsize1" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1000" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn10_selector"
+                    android:text="@string/delete"
+                    android:textColor="@color/user_shuoshuo_textcolor2"
+                    android:textSize="@dimen/user_shuoshuo_textsize1" />
+
+                <Button
+                    android:id="@+id/collectDiaryBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn10_selector"
+                    android:text="@string/collect"
+                    android:textColor="@color/user_shuoshuo_textcolor2"
+                    android:textSize="@dimen/user_shuoshuo_textsize1" />
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/shareBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space1"
+                android:layout_marginRight="@dimen/space1"
+                android:background="@drawable/btn11_selector"
+                android:text="@string/share"
+                android:textColor="@color/user_shuoshuo_textcolor2"
+                android:textSize="@dimen/user_shuoshuo_textsize1" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space2"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/line2" />
+    </LinearLayout>
+
+</ScrollView>

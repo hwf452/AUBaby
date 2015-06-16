@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AllBackgroundstyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/TopBackgroundTitleBarstyle" >
+
+        <Button
+            style="@style/backBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="backButton" />
+
+        <TextView
+            android:id="@+id/tv_titlebar4"
+            style="@style/TopTitleTextViewStyle"
+            android:background="@null" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/btn_tab2_rightStyle"
+            android:layout_width="90.5dp"
+            android:layout_height="26.5dp"
+            android:background="@drawable/btn30_selector"
+            android:text="@string/call_mainTeacher"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ScrollView
+        style="@style/HorizontalPaddingstyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.halong.aubaby.widget.NoScrollGridView
+                android:id="@+id/userGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tab2_marginTon_detail"
+                android:background="@drawable/list9_2"
+                android:drawingCacheQuality="low"
+                android:gravity="center"
+                android:horizontalSpacing="@dimen/grid_item_space"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/grid_item_space" 
+             />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space2" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

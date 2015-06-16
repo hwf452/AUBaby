@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AllBackgroundstyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/TopBackgroundTitleBarstyle" >
+
+        <Button
+            style="@style/backBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="backButton" />
+
+        <TextView
+            android:id="@+id/tv_titlebar4"
+            style="@style/TopTitleTextViewStyle"
+            android:background="@null"
+            android:text="@string/systemSetting_tab2" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            style="@style/HorizontalPaddingstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linear11"
+                style="@style/tv_tab_listPaddingleftAndRight"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/tv_tab_listtv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tab2_tv_list1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1000" />
+
+                <ImageView
+                    style="@style/tab2_image_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/button29" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear13"
+                style="@style/tv_tab_listPaddingleftAndRight"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/tv_tab_listtv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tab2_tv_list3" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1000" />
+
+                <ImageView
+                    style="@style/tab2_image_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/button29" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear14"
+                style="@style/tv_tab_listPaddingleftAndRight"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height" >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/tv_tab_listtv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tab2_tv_list4" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1000" />
+
+                <ImageView
+                    style="@style/tab2_image_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/button29" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/helpLayout"
+                style="@style/tv_tab_listPaddingleftAndRight"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height" >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/tv_tab_listtv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tab2_tv_list5" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1000" />
+
+                <ImageView
+                    style="@style/tab2_image_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/button29" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear16"
+                style="@style/tv_tab_listPaddingleftAndRight"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    style="@style/tv_tab_listtv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tab2_tv_list6" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1000" />
+
+                <ImageView
+                    style="@style/tab2_image_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/button29" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/updateLayout"
+                style="@style/tv_tab_listPaddingleftAndRight"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height" >
+
+                <TextView
+                    style="@style/tv_tab_listtv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/update" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1000" />
+
+                <ImageView
+                    style="@style/tab2_image_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/button29" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear17"
+                style="@style/tv_tab_listPaddingleftAndRight"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height" >
+
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/tv_tab_listtv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tab2_tv_list7" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1000" />
+
+                <ImageView
+                    style="@style/tab2_image_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/button29" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear18"
+                style="@style/tv_tab_listPaddingleftAndRight"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginBottom="@dimen/space2" >
+
+                <TextView
+                    android:id="@+id/textView8"
+                    style="@style/tv_tab_listtv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tab2_tv_list8" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="btn_tab2_rightStyle">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="btn_linear_Style">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="tv_tab_tv1">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ff336d</item>
+    </style>
+
+    <style name="tv_tab_tv2">
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#ff336d</item>
+    </style>
+
+    <style name="tv_tab_listPaddingleftAndRight">
+        <item name="android:layout_marginTop">@dimen/space2</item>
+        <item name="android:background">@drawable/list25_selector</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="tv_tab_listOrientation">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="tv_tab_listOrientation1">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="tv_tab_listtv1">
+        <item name="android:textColor">#646464</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_padding</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_padding</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="tv_tab_listtv2">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#6c6c6c</item>
+    </style>
+
+    <style name="tv_tab_listtv3">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#6c6c6c</item>
+    </style>
+
+    <style name="tv_tab_listtv4">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">#e92557</item>
+    </style>
+
+    <style name="tv_tab_listtv5">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#2d2d2d</item>
+        <item name="android:layout_marginRight">12dp</item>
+    </style>
+
+    <style name="ProgressBarStyle" parent="@android:style/Widget.ProgressBar.Horizontal" />
+
+</resources>

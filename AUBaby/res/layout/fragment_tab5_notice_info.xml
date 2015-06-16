@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HorizontalPaddingstyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="none"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/HorizontalPaddingstyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/space2"
+            android:layout_marginTop="@dimen/space2"
+            android:background="@drawable/list25"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_smallsmall_margin"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/TextViewTab5Notice"
+                    android:text="@string/owner_person" />
+
+                <TextView
+                    android:id="@+id/userNameTextView"
+                    style="@style/TextViewTab5Notice" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_smallsmallsmall_margin"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/TextViewTab5Notice"
+                    android:text="@string/owner_date" />
+
+                <TextView
+                    android:id="@+id/dateTextView"
+                    style="@style/TextViewTab5Notice" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/receveOverview"
+                style="@style/TextViewTab5Notice"
+                android:layout_marginTop="@dimen/view_smallsmallsmall_margin"
+                />
+
+     <TextView
+         android:id="@+id/receive2"
+         style="@style/TextViewTab5Notice"
+         android:layout_marginTop="@dimen/view_smallsmallsmall_margin"
+         android:textColor="@color/red1" />
+            
+            <TextView
+                android:id="@+id/receive1"
+                style="@style/TextViewTab5Notice"
+                android:layout_marginTop="@dimen/view_smallsmallsmall_margin"
+               
+                
+                 android:textColor="@color/red2" />
+
+       
+            <TextView
+                android:id="@+id/receive3"
+                style="@style/TextViewTab5Notice"
+                android:layout_marginTop="@dimen/view_smallsmallsmall_margin"
+                 android:textColor="@color/black4"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/view_smallsmallsmall_margin"
+                android:background="@drawable/line6"
+                android:contentDescription="@string/app_name" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_smallsmall_margin"
+                android:layout_marginTop="@dimen/view_smallsmall_margin"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/contentTextView"
+                    style="@style/TextViewTab5Notice"
+                    android:lineSpacingExtra="2dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_smallsmall_margin"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bg_1"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/fileOriginNameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/btn_file_selector"
+                android:drawablePadding="@dimen/space1"
+                android:gravity="center_vertical"
+                android:textColor="@color/txt2_selector"
+                android:textSize="@dimen/textview_tab5_notice_replay_size"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/progressTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/dimgray"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/sizeTxt"
+                style="@style/TextViewTab5Notice"
+                android:layout_marginBottom="@dimen/view_smallsmall_margin"
+                android:layout_marginTop="@dimen/view_smallsmall_margin"
+                android:textSize="@dimen/textview_tab5_notice_replay_size"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>

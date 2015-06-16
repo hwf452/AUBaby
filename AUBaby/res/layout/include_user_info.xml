@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/HorizontalPaddingstyle"
+        android:layout_width="match_parent"
+        android:layout_height="97.2dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="95.9dp"
+            android:layout_height="95.9dp" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="97dp"
+                android:layout_height="97dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/head" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_tec"
+                android:visibility="gone" 
+                android:id="@+id/tecImg"
+                android:layout_gravity="right|bottom"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="97.2dp"
+            android:layout_marginLeft="@dimen/tab2_center_leftDip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#404040"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1000"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:textColor="#404040"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/classDetailBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn26_selector"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        style="@style/HorizontalPaddingstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tab2_topMargin1" >
+
+        <LinearLayout
+            style="@style/btn_linear_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/list8_5"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/tv_tab_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null" />
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/tv_tab_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/publish" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/btn_linear_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/list8_6"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/tv_tab_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/tv_tab_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zan" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/btn_linear_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/list8_6"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/tv_tab_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView9"
+                style="@style/tv_tab_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comment" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/btn_linear_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/list8_7"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/tv_tab_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView11"
+                style="@style/tv_tab_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/browse" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

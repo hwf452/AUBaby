@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AllBackgroundstyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/TopBackgroundTitleBarstyle" >
+
+        <Button
+            style="@style/backBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="backButton" />
+
+        <TextView
+            android:id="@+id/tv_titlebar4"
+            style="@style/TopTitleTextViewStyle"
+            android:background="@null"
+            android:text="@string/tv_tab2_myphonebook" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/btn_tab2_rightStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn28_selector"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        style="@style/HorizontalPaddingstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="18dp" >
+
+        <TextView
+            style="@style/tab2_tv_tv12_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab2_tv_totalpicbook" />
+
+        <TextView
+            android:id="@+id/albumCountsTxt"
+            style="@style/tab2_tv_tv12_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp" />
+
+        <TextView
+            style="@style/tab2_tv_tv12_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="21dp"
+            android:text="@string/tab2_totalbook_tv" />
+
+        <TextView
+            android:id="@+id/allPhotoCountsTxt"
+            style="@style/tab2_tv_tv12_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginLeft="@dimen/activity_horizontal_padding"
+        android:layout_marginRight="@dimen/activity_horizontal_padding"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/line5"
+        android:contentDescription="@string/app_name" />
+
+    <GridView
+        android:id="@+id/gridView1"
+        style="@style/HorizontalPaddingstyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView1"
+        android:columnWidth="120dp"
+        android:drawingCacheQuality="low"
+        android:fadingEdge="none"
+        android:horizontalSpacing="@dimen/grid_item_space"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="auto_fit"
+        android:scrollbarStyle="outsideOverlay"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/grid_item_space"
+        android:visibility="gone" >
+    </GridView>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HorizontalPaddingstyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/space1"
+    android:layout_marginTop="@dimen/space1" >
+
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn13_selector"
+        android:focusableInTouchMode="true"
+        android:text="@string/send"
+        android:textColor="@color/send_textcolor"
+        android:textSize="@dimen/user_name_textsize1" >
+    </Button>
+
+    <EditText
+        android:id="@+id/sendEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/sendBtn"
+        android:layout_marginRight="@dimen/space1"
+        android:layout_toLeftOf="@id/sendBtn"
+        android:background="@drawable/list6_2"
+        android:hint="@string/jion_discuss"
+        android:inputType="text|textMultiLine"
+        android:maxLength="256"
+        android:textSize="@dimen/uesr_send_textsize" />
+
+</RelativeLayout>

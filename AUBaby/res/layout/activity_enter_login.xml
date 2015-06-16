@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AllBackgroundstyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/TopBackgroundTitleBarstyle" >
+
+        <Button
+            style="@style/backBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="backButton" />
+
+        <TextView
+            android:id="@+id/tv_titlebar4"
+            style="@style/TopTitleTextViewStyle"
+            android:background="@null"
+            android:text="@string/login" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeLayout1"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/upImageView"
+                    style="@style/ImageViewEnterUpStyle"
+                    android:contentDescription="@null" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/accountEditText"
+                        style="@style/EditTextEnterStyle"
+                        android:layout_marginTop="@dimen/view_bigbig_margin"
+                        android:hint="@string/login_account"
+                        android:inputType="text"
+                        android:textCursorDrawable="@drawable/cursor" />
+
+                    <EditText
+                        android:id="@+id/passwordEditText"
+                        style="@style/EditTextEnterStyle"
+                        android:layout_marginTop="@dimen/view_small_margin"
+                        android:hint="@string/login_password"
+                        android:inputType="textPassword"
+                        android:textCursorDrawable="@drawable/cursor" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/enter_view_sides_margin"
+                        android:layout_marginRight="@dimen/enter_view_sides_margin"
+                        android:layout_marginTop="@dimen/view_small_margin" >
+
+                        <CheckBox
+                            android:id="@+id/rememverCheckBox"
+                            style="@style/CheckBoxEnterStyle"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:checked="true"
+                            android:text="@string/login_remember" />
+
+                        <TextView
+                            android:id="@+id/forgetTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:clickable="true"
+                            android:text="@string/login_forget"
+                            android:textColor="@color/black3"
+                            android:textSize="@dimen/checkbox_enter_text_size" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/loginButton"
+                        style="@style/ButtonEnterRedStyle"
+                        android:layout_marginTop="@dimen/view_big_margin"
+                        android:text="@string/login" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/downImageView"
+                    style="@style/ImageViewEnterDownStyle"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+
+            <include
+                layout="@layout/include_progress"
+                android:visibility="gone" />
+        </FrameLayout>
+    </ScrollView>
+
+</RelativeLayout>

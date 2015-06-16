@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.halong.aubaby.widget.PullToRefreshView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pullToRefreshView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <com.halong.aubaby.widget.swipelistview.SwipeListView
+        xmlns:swipe="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/onlyListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/line4"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        swipe:swipeActionRight="reveal"
+        swipe:swipeAnimationTime="0"
+        swipe:swipeBackView="@+id/back"
+        swipe:swipeCloseAllItemsWhenMoveList="true"
+        swipe:swipeFrontView="@+id/front"
+        swipe:swipeMode="none"
+        swipe:swipeOffsetLeft="120dp"
+        swipe:swipeOpenOnLongPress="true" />
+
+</com.halong.aubaby.widget.PullToRefreshView>

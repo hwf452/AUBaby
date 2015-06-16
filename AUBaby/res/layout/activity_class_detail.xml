@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AllBackgroundstyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/TopBackgroundTitleBarstyle" >
+
+        <Button
+            style="@style/backBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="backButton" />
+
+        <TextView
+            android:id="@+id/tv_titlebar4"
+            style="@style/TopTitleTextViewStyle"
+            android:background="@null" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/btn_tab2_rightStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn28_selector"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:id="@+id/sccroll"
+            style="@style/HorizontalPaddingstyle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:drawingCacheQuality="low"
+            android:fadingEdge="none"
+            android:scrollbarStyle="outsideOverlay" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/space2" >
+
+                <com.halong.aubaby.widget.NoScrollGridView
+                    android:paddingTop="@dimen/space4"
+                    android:id="@+id/gridView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/tab2_marginTon_detail"
+                    android:background="@drawable/list9_2"
+                    android:columnWidth="80dp"
+                    android:drawingCacheQuality="low"
+                    android:fadingEdge="none"
+                    android:gravity="center"
+                    android:horizontalSpacing="@dimen/grid_item_space"
+                    android:listSelector="@null"
+                    android:numColumns="auto_fit"
+                    android:scrollbars="@null"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="@dimen/grid_item_space" >
+                </com.halong.aubaby.widget.NoScrollGridView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/tab2_marginTon_detail1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        style="@style/tab2_linear_2"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/list11" >
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/icon_009" />
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            style="@style/tab2_tv_tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/school_name" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1000" />
+
+                        <TextView
+                            android:id="@+id/schoolNmaeText"
+                            style="@style/tab2_tv_tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            style="@style/tab2_image_2"
+                            android:layout_width="33.9dp"
+                            android:layout_height="33.9dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/button29"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/tab2_linear_1"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/list12" >
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/icon_010" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            style="@style/tab2_tv_tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/group_name" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1000" />
+
+                        <TextView
+                            android:id="@+id/classNameTxt"
+                            style="@style/tab2_tv_tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            style="@style/tab2_image_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/button29"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/tab2_linear_1"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/list12" >
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/icon_011" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            style="@style/tab2_tv_tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/join_date" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1000" />
+
+                        <TextView
+                            android:id="@+id/joinDateTxt"
+                            style="@style/tab2_tv_tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            style="@style/tab2_image_2"
+                            android:layout_width="33.9dp"
+                            android:layout_height="33.9dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/button29"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/tab2_linear_2"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/list13" >
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/icon_012" />
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            style="@style/tab2_tv_tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/user_type" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1000" />
+
+                        <TextView
+                            android:id="@+id/isClassAdminTxt"
+                            style="@style/tab2_tv_tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            style="@style/tab2_image_2"
+                            android:layout_width="33.9dp"
+                            android:layout_height="33.9dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/button29"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <include layout="@layout/include_progress" />
+    </FrameLayout>
+
+</LinearLayout>

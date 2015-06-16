@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="61dp"
+    android:paddingBottom="6dp"
+    android:paddingTop="6dp" >
+
+    <ImageView
+        android:id="@+id/headImg"
+        android:layout_width="@dimen/user_head_width_height"
+        android:layout_height="@dimen/user_head_width_height"
+        android:layout_marginRight="6dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/head"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/nameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/headImg"
+        android:layout_toRightOf="@+id/headImg"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#393939"
+        android:textSize="9sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/numberTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameTxt"
+        android:layout_toRightOf="@+id/headImg"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#393939"
+        android:textSize="9sp" />
+
+    <Button
+        android:id="@+id/callBtn"
+        android:layout_width="81dp"
+        android:layout_height="24.5dp"
+        android:layout_alignBottom="@+id/headImg"
+        android:layout_alignLeft="@+id/numberTxt"
+        android:background="@drawable/btn31_selector"
+        android:drawableLeft="@drawable/icon_013"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="@string/tab2_tv_call"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+</RelativeLayout>

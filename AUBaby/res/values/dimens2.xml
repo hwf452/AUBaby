@@ -1,0 +1,34 @@
+<resources>
+
+   <dimen name="button_drawable_padding">20dp</dimen>
+   <dimen name="view_big_padding">25dp</dimen>
+   <dimen name="view_small_padding">15dp</dimen>
+   <dimen name="edittext_sides_padding">7dp</dimen>
+   
+   <dimen name="view_big_margin">25dp</dimen>
+   <dimen name="view_bigbig_margin">45dp</dimen>
+   <dimen name="view_small_margin">15dp</dimen>
+   <dimen name="view_smallsmall_margin">8dp</dimen>
+   <dimen name="view_smallsmallsmall_margin">3dp</dimen>
+   <dimen name="enter_view_sides_margin">40dp</dimen>
+   
+
+   <dimen name="button_enter_text_size">20sp</dimen>
+   <dimen name="edittext_enter_text_size">17sp</dimen>
+   <dimen name="checkbox_enter_text_size">15sp</dimen>
+   <dimen name="textview_tab5_content_size">11sp</dimen>
+   <dimen name="textview_tab5_app_size">12sp</dimen>
+   <dimen name="textview_tab5_tittle_size">13sp</dimen>
+   <dimen name="textview_tab5_bigtittle_size">15sp</dimen>
+   <dimen name="textview_tab5_message_num_size">10sp</dimen>
+   <dimen name="textview_tab5_notice_replay_size">16sp</dimen>
+   <dimen name="textview_tab5_notice_replaynum_size">18sp</dimen>
+   <dimen name="textview_tab5_notice_title_size">18sp</dimen>
+   
+   <dimen name="radiobutton_tab4_text_size">13sp</dimen>
+   <dimen name="textview_tab4_video_text_size">13sp</dimen>
+   <dimen name="textview_tab4_video_num_size">11sp</dimen>
+   <dimen name="textview_tab4_video_type_size">19sp</dimen>
+   <dimen name="textview_tab4_livesite_date_size">13sp</dimen>
+   <dimen name="textview_tab4_livesite_title_size">16sp</dimen>
+</resources>

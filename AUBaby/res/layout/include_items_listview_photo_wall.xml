@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    style="@style/HorizontalPaddingstyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/activity_horizontal_padding" >
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" 
+        android:id="@+id/frameLayout">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_1" />
+
+        <TextView
+            android:id="@+id/postedTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dimgrey"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="@dimen/grid_item_space"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/photo2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_1"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/postedTxt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dimgrey"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="@dimen/grid_item_space"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/photo3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_1"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/postedTxt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dimgrey"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.halong.aubaby.widget.PullToRefreshView
+        android:id="@+id/pullToRefreshView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/photoWallGridView"
+            style="@style/HorizontalPaddingstyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawingCacheQuality="low"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/grid_item_space"
+            android:listSelector="@null"
+            android:numColumns="3"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollingCache="true"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/grid_item_space" />
+    </com.halong.aubaby.widget.PullToRefreshView>
+
+    <include layout="@layout/include_progress" />
+
+</FrameLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AllBackgroundstyle"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        style="@style/TopBackgroundTitleBarstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/TopTitleTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab4" />
+        <Button 
+            android:id="@+id/seekButton"
+            style="@style/ButtonSeekStyle"/>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/tb4RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="45.5dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/tb4LeftRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn54_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/live_site"
+            android:textColor="@color/red4"
+            android:textSize="@dimen/radiobutton_tab4_text_size"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/tb4RightRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn54_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/video_choice"
+            android:textColor="@color/red4"
+            android:textSize="@dimen/radiobutton_tab4_text_size"
+            android:textStyle="bold" />
+    </RadioGroup>
+    
+    <FrameLayout
+        android:id="@+id/tb4FrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+</LinearLayout>

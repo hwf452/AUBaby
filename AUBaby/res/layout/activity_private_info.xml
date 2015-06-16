@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AllBackgroundstyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout style="@style/TopBackgroundTitleBarstyle" >
+
+            <Button
+                style="@style/backBtnStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="backButton" />
+
+            <TextView
+                android:id="@+id/tv_titlebar4"
+                style="@style/TopTitleTextViewStyle"
+                android:background="@null"
+                android:text="@string/tab2_tv_list1" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scrollview1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fadingEdge="none"
+            android:fillViewport="true"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/banjiLayout"
+                style="@style/HorizontalPaddingstyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:paddingTop="@dimen/space2"
+                android:paddingBottom="@dimen/space2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height"
+                  
+                    android:background="@drawable/list26"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/activity_horizontal_padding" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/user_id"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1000" />
+
+                    <TextView
+                        android:id="@+id/mobileTxt"
+                        style="@style/tv_tab_listtv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        style="@style/tab2_image_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/button29"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/userNameLayout"
+                    style="@style/tv_tab_listOrientation"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height"
+                    android:background="@drawable/list30"
+                    android:paddingLeft="@dimen/activity_horizontal_padding" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/user_name"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1000" />
+
+                    <TextView
+                        android:id="@+id/userNameTXT"
+                        style="@style/tv_tab_listtv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        style="@style/tab2_image_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/button29" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/emailLayout"
+                    style="@style/tv_tab_listOrientation"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height"
+                    android:background="@drawable/list30"
+                    android:paddingLeft="@dimen/activity_horizontal_padding" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1000" />
+
+                    <TextView
+                        android:id="@+id/emailTxt"
+                        style="@style/tv_tab_listtv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        style="@style/tab2_image_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/button29" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/QQLayout"
+                    style="@style/tv_tab_listOrientation"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height"
+                    android:background="@drawable/list30"
+                    android:paddingLeft="@dimen/activity_horizontal_padding" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/QQ"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1000" />
+
+                    <TextView
+                        android:id="@+id/QQTxt"
+                        style="@style/tv_tab_listtv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        style="@style/tab2_image_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/button29" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/tv_tab_listOrientation"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height"
+                    android:background="@drawable/list27"
+                    android:paddingLeft="@dimen/activity_horizontal_padding" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/account_state"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1000" />
+
+                    <TextView
+                        android:id="@+id/accountStateTxt"
+                        style="@style/tv_tab_listtv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        style="@style/tab2_image_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/button29"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/translucentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/translucent9"
+        android:contentDescription="@null"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" 
+        android:clickable="true">
+
+        <Button
+            android:id="@+id/cameraBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn67_selector"
+            android:text="相机拍照"
+            android:textColor="#ed3e6c"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/picsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/btn67_selector"
+            android:text="相册选择"
+            android:textColor="#ed3e6c"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/btn67_selector"
+            android:text="取消"
+            android:textColor="#3f3f3f"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <include layout="@layout/include_progress" />
+
+</FrameLayout>

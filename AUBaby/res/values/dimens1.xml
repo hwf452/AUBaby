@@ -1,0 +1,20 @@
+<resources>
+    <dimen name="leftDip">8dp</dimen>
+    <dimen name="leftDip1">4dp</dimen>
+	<dimen name="RightDip">8dp</dimen>
+	<dimen name="tab2_center_leftDip">11dip</dimen>
+	<dimen name="tab2_topMargin">10.5dip</dimen>
+	<dimen name="tab2_topMargin1">6dip</dimen>
+	<dimen name="tab2_marginTon_detail">20dip</dimen>
+   <dimen name="tab2_marginTon_detail1">10dp</dimen>
+   <dimen name="tab2_gridview_leftmargin">10dp</dimen>
+   <dimen name="tab2_gridview_topmargin">5dp</dimen>
+   <dimen name="tab2_gridPiding">8dp</dimen>
+   <dimen name="activity_horizontal_margin1">16dp</dimen>
+    <dimen name="activity_vertical_margin1">16dp</dimen>
+    <dimen name="leftDip15">15dip</dimen>
+    <dimen name="topDip15">15dip</dimen>
+    <dimen name="topDip16">12dip</dimen>
+    <dimen name="topDip17">100dip</dimen>
+
+</resources>

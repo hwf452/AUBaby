@@ -1,0 +1,122 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="AllBackgroundstyle">
+        <item name="android:background">@color/bg_color</item>
+    </style>
+
+    <style name="TopBackgroundTitleBarstyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/top_background_bar_height</item>
+        <item name="android:background">@drawable/top_background</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_padding</item>
+    </style>
+
+    <style name="backBtnStyle">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/btn03_selector</item>
+    </style>
+    <!-- 距离左右两边的距离 -->
+    <style name="HorizontalPaddingstyle">
+        <item name="android:paddingLeft">@dimen/activity_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_padding</item>
+    </style>
+
+    <style name="TopTitleTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/top_background_textview_size</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ems">8</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="rb_style">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@drawable/tv_rb_selector</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/tab_bg_selector</item>
+    </style>
+
+    <style name="rb_style_more">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@drawable/tv_rb_selector</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">1dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="rb_style_more1">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="tab2_linear_1">
+        <item name="android:layout_height">42.5dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_padding</item>
+    </style>
+
+    <style name="tab2_linear_2">
+        <item name="android:layout_height">@dimen/item_height</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_padding</item>
+    </style>
+
+    <style name="tab2_image_1">
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="tab2_image_2">
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="tab2_tv_tv1">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#393939</item>
+    </style>
+
+    <style name="tab2_tv_tv12_show">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#dd0132</item>
+    </style>
+
+</resources>
